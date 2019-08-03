@@ -10,8 +10,8 @@ const App = () => {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         
-        <div className="container">
-        <br></br><Characters className="character" />
+        <div className="flex-grid">
+        <br></br><Characters />
         </div>
         
       </div>

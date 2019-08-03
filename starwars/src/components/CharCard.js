@@ -5,7 +5,7 @@ const CharCard = (props) => {
     // Note: Props come from Character.js
     return (
 
-        <div className="charCard">
+        <div className="col charCard">
             <h2 className="name">- {props.name} -</h2>
             <h3>Birth Year: </h3>{props.birthyear}
             <h3>Gender: </h3>{props.gender}
