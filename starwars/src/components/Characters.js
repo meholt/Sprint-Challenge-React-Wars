@@ -8,17 +8,16 @@ const Characters = () => {
 
     useEffect(() => {
         axios
-          .get('https://swapi.co/api/people/')
-          .then(starWarsInfo => {
-            console.log(starWarsInfo);
+          .get('https://swapi.co/api/people')
+          .then(charInfo => {
     
-            const character = starWarsInfo.data.url;
+            const char = charInfo.data.results;
     
-            console.log(character);
+            console.log(char);
     
             // Set KeyState
-            // setPhoto(picture);
-            // console.log(photo);
+            setCharacters(char);
+            console.log(characters);
     
           })
     
@@ -27,4 +26,21 @@ const Characters = () => {
     
           });
       });
-}
+
+      return (
+
+        <div>
+            {characters.map(character => {
+                return <CharCard 
+                name={character.name}
+                birthyear={character.birth_year}
+                gender={character.gender}
+                // species={character.species}
+                // homeworld={character.homeworld}
+                />
+            })}
+        </div>
+      );
+};
+
+export default Characters;

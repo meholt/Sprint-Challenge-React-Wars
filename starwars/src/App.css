@@ -6,3 +6,29 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.container {
+  width: 90%;
+  /* display: flex;
+  justify-content: space-evenly; */
+}
+
+.charCard {
+  width: 20%;
+  border-radius: 15px;
+  border-style: double solid;
+  border-color: black; 
+  background: whitesmoke;
+  background:rgba(255,255,255,0.5);
+  box-shadow: 5px 10px gray;
+  margin: 25px;
+  padding-bottom: 10px;
+}
+
+.name {
+  color: #c99912;
+}
+
+body {
+  color: #664d07;
+}
