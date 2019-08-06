@@ -35,8 +35,8 @@ const Characters = () => {
                 name={character.name}
                 birthyear={character.birth_year}
                 gender={character.gender}
-                // species={character.species}
-                // homeworld={character.homeworld}
+                species={character.species}
+                homeworld={character.homeworld}
                 />
             })}
         </div>
